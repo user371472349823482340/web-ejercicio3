@@ -1,0 +1,65 @@
+
+:root {
+    font-size: 16px;
+
+    --color-header-footer: rgb(84, 120, 193);
+    --color-text-header-footer: white;
+
+    --color-section: rgba(210, 223, 251, 0.8);
+    --color-text-section: rgb(73, 105, 169);
+
+    --color-hover-background: rgb(10, 15, 24);
+    --color-hover-text: white;
+
+    --color-link-active: black;
+    --color-page-background: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    background-color: var(--color-page-background);
+    color: var(--color-text-section);
+}
+
+header,
+footer {
+    background-color: var(--color-header-footer);
+    color: var(--color-text-header-footer);
+}
+
+header,
+main > section {
+    margin-bottom: 1.25rem;
+}
+
+section {
+    background-color: var(--color-section);
+    color: var(--color-text-section);
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+main > section:last-of-type > article:last-of-type > p {
+    font-style: italic;
+}
+
+a {
+    color: inherit;
+}
+
+a:active {
+    color: var(--color-link-active);
+}
+
+main > section:first-of-type:hover,
+article:hover {
+    background-color: var(--color-hover-background);
+    color: var(--color-hover-text);
+}
